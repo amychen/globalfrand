@@ -1,0 +1,72 @@
+#map {
+	height: 500px;
+	max-width: 90%;
+	margin-left: 5%;
+}
+#title{
+	text-align: center;
+	font-family: 'Inconsolata', monospace;
+}
+
+#addtext{
+	font-family: 'Inconsolata', monospace;
+	font-weight: bold;
+	font-size: 20px;
+	margin-left: 5%;
+	letter-spacing: 3px;
+}
+
+#address{
+	width: 50%;
+	height: 40px;
+	padding: 2px;
+	box-sizing: border-box;
+	font-size: 20px;
+	font-family: 'Inconsolata', monospace;
+	margin-left: 5%;
+}
+
+#addbutton{
+	border-radius: 2px;
+	height: 40px;
+	font-size: 20px;
+	font-family: 'Inconsolata', monospace;
+}
+
+#rmvtext{
+	font-family: 'Inconsolata', monospace;
+	font-weight: bold;
+	font-size: 20px;
+	margin-left: 5%;
+	letter-spacing: 3px;
+}
+
+#rmvaddress{
+	width: 50%;
+	height: 40px;
+	padding: 2px;
+	box-sizing: border-box;
+	font-size: 20px;
+	font-family: 'Inconsolata', monospace;
+	margin-left: 5%;
+}
+
+#rmvbutton{
+	border-radius: 2px;
+	height: 40px;
+	font-size: 20px;
+	font-family: 'Inconsolata', monospace;
+}
+
+#addError, #rmvError{
+	font-family: 'Inconsolata', monospace;
+	margin-left: 5%;
+	color: red;
+}
+
+#markerNum{
+	font-family: 'Inconsolata', monospace;
+	margin-left: 5%;
+	font-size: 30px;
+	text-align: center;
+}

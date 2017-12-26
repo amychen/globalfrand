@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+
+		<title>Global Friends</title>
+
+    	<meta name="viewport" content="initial-scale=1.0">
+    	<meta charset="utf-8">
+
+    	<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700" rel="stylesheet">
+    	<link rel="stylesheet" type="text/css" href="map.css">
+
+    	<script src="jquery-3.2.1.min.js"></script>
+    	<script src="config.js"></script>
+    	<script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+    	<script src="config.js"></script>
+    	<script async defer id="mapURL"></script>
+    	<script type="text/javascript">
+    		var url = "https://maps.googleapis.com/maps/api/js?key=";
+    		var end = config.API_KEY + "&callback=initMap";
+    		document.getElementById('mapURL').src = url + end;
+    	</script>
+	   	
+
+  	</head>
+  	<body>
+  		<!--title-->
+	  	<h1 id="title">WHERE THEY'RE FROM</h1>
+	  	<!--map-->
+	    <div id="map"></div>
+	    <!--add markers to the map-->
+	    <span id="addtext"> ADD TO MAP </span>
+	    <div>
+	   		<input type="textbox" placeholder="Enter a city" id="address" value="">
+	   		<input type="button" value="ADD" id="addbutton">
+	   	</div>
+	   	<div id="addError"></div>
+		<!--remove markers to the map-->
+	   	<span id="rmvtext"> REMOVE FROM MAP </span>
+	    <div>
+	   		<input type="textbox" placeholder="Enter a city" id="rmvaddress" value="">
+	   		<input type="button" value="REMOVE" id="rmvbutton">
+	   	</div>
+	   	<div id="rmvError"></div>
+	   	<!--number of markers-->
+	   	<div id="markerNum"></div>
+	   	<!--firebase/google map code-->
+	    <script src="app.js"></script>
+
+  	</body>
+</html>
